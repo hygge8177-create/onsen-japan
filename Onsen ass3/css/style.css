@@ -1,0 +1,75 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;line-height:1.6;color:#1a1a1a;background:#fff}
+img{max-width:100%;display:block}
+
+.cs-button-solid{display:inline-block;padding:12px 28px;background:#111;color:#fff;text-decoration:none;font-weight:600;border-radius:4px;transition:background-color .3s ease}
+.cs-button-solid:hover{background:#333}
+
+.site-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid rgba(0,0,0,.08)}
+.site-nav{max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative}
+.nav-brand{font-weight:700;letter-spacing:.02em}
+.nav-toggle{display:none;border:1px solid rgba(0,0,0,.15);background:#fff;border-radius:8px;padding:8px 10px;font-size:18px;line-height:1}
+.nav-links{list-style:none;display:flex;gap:24px;align-items:center}
+.nav-links a{text-decoration:none;color:#111;font-weight:600}
+
+@media (max-width:768px){
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center}
+  .nav-links{display:none;flex-direction:column;gap:0;position:absolute;left:0;right:0;top:56px;background:#fff;border-bottom:1px solid rgba(0,0,0,.08);padding:10px 24px}
+  .nav-links li{width:100%}
+  .nav-links a{display:block;width:100%;padding:12px 0}
+  .nav-links.is-open{display:flex}
+}
+
+#hero-2335{position:relative;overflow:hidden}
+#hero-2335 .cs-wrapper{position:relative}
+#hero-2335 .cs-background{position:absolute;inset:0;z-index:-1}
+#hero-2335 .cs-background img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#hero-2335 .cs-container{max-width:1200px;margin:0 auto;padding:120px 24px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;position:relative;z-index:1}
+#hero-2335 .cs-title{font-size:3rem;margin-bottom:16px}
+#hero-2335 .cs-tag{display:block;font-size:1rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+#hero-2335 .cs-text{margin-bottom:24px;max-width:500px}
+#hero-2335 .cs-picture img{max-width:420px}
+
+@media (max-width:900px){
+  #hero-2335 .cs-container{grid-template-columns:1fr;padding:72px 24px}
+  #hero-2335 .cs-picture img{max-width:520px}
+}
+
+#why-choose-1876{padding:120px 24px}
+#why-choose-1876 .cs-container{max-width:1200px;margin:0 auto}
+#why-choose-1876 .cs-topper{font-size:.9rem;letter-spacing:2px;text-transform:uppercase}
+#why-choose-1876 .cs-title{font-size:2.2rem;margin:16px 0}
+#why-choose-1876 .cs-ul{list-style:none;margin:24px 0}
+#why-choose-1876 .cs-li{margin-bottom:8px}
+
+#services-1329{padding:120px 24px;background:#fff}
+#services-1329 .cs-container{max-width:1200px;margin:0 auto}
+#services-1329 .cs-content{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;gap:24px}
+#services-1329 .cs-title{font-size:2.2rem}
+
+#services-1329 .cs-card-group{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;list-style:none}
+#services-1329 .cs-item{position:relative;overflow:hidden;background:#000;color:#fff;border-radius:12px;min-height:360px;padding:24px;display:flex;flex-direction:column;justify-content:flex-start}
+#services-1329 .cs-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+#services-1329 .cs-number,#services-1329 .cs-h3,#services-1329 .cs-item-text{position:relative;z-index:1}
+#services-1329 .cs-number{font-size:.9rem;opacity:.9}
+#services-1329 .cs-h3{margin:12px 0;font-size:1.6rem;line-height:1.15}
+#services-1329 .cs-item-text{font-size:1rem;max-width:28ch}
+
+@media (max-width:600px){
+  #services-1329 .cs-content{flex-direction:column;align-items:flex-start;text-align:left;margin-bottom:28px}
+  #services-1329 .cs-card-group{grid-template-columns:1fr;gap:16px}
+  #services-1329 .cs-item{min-height:280px}
+  #services-1329 .cs-h3{font-size:1.5rem}
+}
+
+#contact-2251{padding:120px 24px;background:#faf7f2}
+#contact-2251 .cs-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+#contact-2251 iframe{width:100%;height:100%;min-height:400px;border:0}
+.cs-form{display:grid;gap:16px}
+.cs-input,.cs-textarea{width:100%;padding:12px;border:1px solid #ccc;font-family:inherit}
+.cs-textarea{min-height:120px}
+
+@media (max-width:900px){
+  #contact-2251 .cs-container{grid-template-columns:1fr}
+}
